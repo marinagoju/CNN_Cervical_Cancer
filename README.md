@@ -1,4 +1,4 @@
-![imagen](https://github.com/marinagoju/ML-Classifier-citology/blob/main/src/data/recortada1.jpg)
+![imagen](https://github.com/marinagoju/ML-Classifier-citology/blob/main/src/data/portada.jpg)
 # <div align="center">**Clasificador cáncer cervical en citología de cérvix**🔬</div>
 
 En este repositorio se plantea un modelo predictivo de redes convolucionales basado en un clasificador de imágenes de citologías cervicovaginales a nivel celular, es decir fundado en las características de células aisladas procedentes del cuello del útero.
