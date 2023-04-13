@@ -48,8 +48,7 @@ La categoría de células atípicas la constituyen células coilocíticas y disq
 
 Otro aspecto crucial en el procesado de los datos fue ajustar todas las imágenes a la misma resolución y dimensión, así como ajustar la configuración para cargarlas en blanco y negro (1 canal o dimensión) y así reducir los features.
 
-
-txt<br></br>
+<br></br>
 
 <div id='id3'/>
 <h2> 📋 3. Resultados y observaciones generales</h2>
