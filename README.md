@@ -10,7 +10,7 @@ En este repositorio se plantea un modelo predictivo de redes convolucionales bas
 4. [Conclusiones](#id4)
 5. [Comentarios del autor](#id5)
 6. [Librerías y recursos](#id6)
-
+<br></br>
 ***¿Por qué un modelo de clasificación de cáncer cervical?***<br></br>
 
 El cáncer de cuello de útero es un problema de salud creciente y una causa importante de mortalidad en las mujeres en todo el mundo. 
