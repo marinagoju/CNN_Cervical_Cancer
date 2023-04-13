@@ -6,7 +6,7 @@ En este repositorio se plantea un modelo predictivo de redes convolucionales bas
 
 1. [Dataset y metodología de trabajo](#id1)
 2. [Análisis de datos](#id2)
-3. [Resultados y observaciones generales](#id3) 
+3. [Resultados y observaciones](#id3) 
 4. [Conclusiones](#id4)
 5. [Comentarios del autor](#id5)
 6. [Librerías y recursos](#id6)<br></br>
@@ -51,7 +51,7 @@ Otro aspecto crucial en el procesado de los datos fue ajustar todas las imágene
 <br></br>
 
 <div id='id3'/>
-<h2> 📋 3. Resultados y observaciones generales</h2>
+<h2> 📋 3. Resultados y observaciones</h2>
 
 txt<br></br>
 
