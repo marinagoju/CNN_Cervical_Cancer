@@ -1,7 +1,7 @@
-![imagen](./data/recortada1.png)
-# <div align="center">**Clasificador cáncer cervical en citologías cervicovaginales**:cell:</div>
+![imagen](https://github.com/marinagoju/ML-Classifier-citology/blob/main/src/data/recortada1.jpg)
+# <div align="center">**Clasificador cáncer cervical en citologías vaginales**🔬</div>
 
-En este repositorio se plantea un modelo predictivo de redes convolucionales basado en un clasificador de imágenes de citologías cervicovaginales a nivel celular, es decir fundado en las características de células aisladas procedentes del cuello del útero y la porción alta de la vagina.
+En este repositorio se plantea un modelo predictivo de redes convolucionales basado en un clasificador de imágenes de citologías cervicovaginales a nivel celular, es decir fundado en las características de células aisladas procedentes del cuello del útero.
 <br></br> 
 
 1. [Dataset y metodología de trabajo](#id1)
@@ -11,6 +11,7 @@ En este repositorio se plantea un modelo predictivo de redes convolucionales bas
 5. [Comentarios del autor](#id5)
 6. [Librerías y recursos](#id6)
 
+<br></br>
 ***¿Por qué un modelo de clasificación de cáncer cervical?***<br></br>
 
 El cáncer de cuello de útero es un problema de salud creciente y una causa importante de mortalidad en las mujeres en todo el mundo. 
