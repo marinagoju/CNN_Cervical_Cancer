@@ -9,9 +9,8 @@ En este repositorio se plantea un modelo predictivo de redes convolucionales bas
 3. [Resultados y observaciones generales](#id3) 
 4. [Conclusiones](#id4)
 5. [Comentarios del autor](#id5)
-6. [Librerías y recursos](#id6)
+6. [Librerías y recursos](#id6)<br></br>
 
-<br></br>
 ***¿Por qué un modelo de clasificación de cáncer cervical?***<br></br>
 
 El cáncer de cuello de útero es un problema de salud creciente y una causa importante de mortalidad en las mujeres en todo el mundo. 
@@ -49,8 +48,7 @@ La categoría de células atípicas la constituyen células coilocíticas y disq
 
 Otro aspecto crucial en el procesado de los datos fue ajustar todas las imágenes a la misma resolución y dimensión, así como ajustar la configuración para cargarlas en blanco y negro (1 canal o dimensión) y así reducir los features.
 
-
-txt<br></br>
+<br></br>
 
 <div id='id3'/>
 <h2> 📋 3. Resultados y observaciones generales</h2>
