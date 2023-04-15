@@ -32,7 +32,7 @@ def loadImage(image_path, image_height, image_width, grey_scale:bool = False) ->
     
     image_list = os.listdir(image_path) # Lista de los nombres de los archivos en el directorio especificado.
     
-    if grey_scale: # If True
+    if grey_scale: # If True -> EN BLANCO Y NEGRO
          
         for img in image_list:
             image_loaded = cv2.imread(image_path + img, flags=cv2.IMREAD_GRAYSCALE)  # Ajustamos lectura en escala de grises. Tambien imread(image_path +img, True) y channel 1.  
@@ -48,7 +48,7 @@ def loadImage(image_path, image_height, image_width, grey_scale:bool = False) ->
 
         return (np.array(X), np.array(Y))
     
-    else: # If False
+    else: # If False -> EN COLOR
 
         for img in image_list:
             image_loaded = imread(image_path + img)
