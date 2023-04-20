@@ -1,30 +1,56 @@
 import numpy as np 
-import random
-from typing import List          # Para la función de balanceData()
-import os                        # Para manipular directorios y archivos
-import cv2                       # Para procesamiento de imágenes (visión artificial)
-from skimage.io import imread    # Para lectura de imagenes
+import cv2                       
+from skimage.io import imread    
 
 
 # CONSTANTES PARA LAS CARACTERISTICAS DE LAS IMAGENES Y EL MODELO 
 
-IMAGE_HEIGHT = 350
-IMAGE_WIDTH = 350
+IMAGE_HEIGHT = 50
+IMAGE_WIDTH = 50
 IMAGE_CHANNELS = 3   # RGB o color (3) // ByN o escala grises (1)
 DATA_PATH = "../../../data_ML/" 
-BATCH_SIZE = 10
+BATCH_SIZE = 32
 EPOCHS = 50
+PATIENCE = 25 
 
 
 # FUNCIONES DE UTILIDAD
 
-def loadImage(image_list, image_path, image_height, image_width, grey_scale:bool = False) -> tuple:
-    '''Función para leer datos (archivos de imagen) de forma iterativa.
+def balanceData(data_list) -> tuple: 
+    import random
+    from typing import List 
+    '''Función para balancear datos en algoritmos de clasificación binaria. Para datasets con dos categorias.
 
-    Input (image_list): Lista de los nombres de los archivos de imagenes a leer.
-    Input (path): Ruta donde se encuentran los archivos.
+    Input (data_list): Lista con los nombres de los archivos a equilibrar por categoria.
+        
+    Output: Tupla de dos Lista de strings. La primera lista con los nombres de los archivos equilibrados por categorias,
+            y la segunda con los nombres de los archivos que se han eliminado.
+    
+    ''' 
+    category_1: List[str] = [img for img in data_list if 'normal' in img] 
+    category_2: List[str] = [img for img in data_list if 'atipica' in img]
+    storelist: List[str] = []
+
+    while len(category_1) > len(category_2):
+        item_dropped = category_1.pop(random.randint(0,(len(category_1)-1)))
+        storelist.append(item_dropped)
+
+    while len(category_1) < len(category_2):
+        item_dropped = category_2.pop(random.randint(0,(len(category_2)-1)))
+        storelist.append(item_dropped)
+
+    balanced_dataset = category_1 + category_2
+    return balanced_dataset, storelist
+
+
+
+def loadImage(image_list, image_path, image_height, image_width, grey_scale:bool = False) -> tuple:
+    '''Función para leer datos de imagen de forma iterativa.
+
+    Input (image_list): Lista de los nombres de los archivos a leer.
+    Input (image_path): Ruta donde se encuentran los archivos.
     Input (image_height, image_width): Dimensiones de alto y ancho con las que se cargarán los archivos de imagen (resize).
-    Input (color): Booleano que configura la lectura de las imágenes en escala de grises. If 'True' converts color images to gray-scale.
+    Input (grey_scale): Booleano que configura la lectura de las imágenes en escala de grises. If 'True' converts color images to gray-scale.
         
     Output: Tuple(np.array X, np.array Y)
     
@@ -63,29 +89,3 @@ def loadImage(image_list, image_path, image_height, image_width, grey_scale:bool
 
 
         return (np.array(X), np.array(Y))
-    
-
-
-def balanceData(data_path) -> tuple: 
-    '''Función para balancear los datos del dataset en algoritmos de clasificación binaria.
-
-    Input (path): Ruta de los archivos del dataset.
-        
-    Output: Tupla de dos Lista de strings. La primera con los nombres de los archivos del dataset balanceado, y la segunda con los nombres de los archivos que hemos eliminado.
-    
-    ''' 
-    image_list = os.listdir(data_path)
-    category1_list: List[str] = [img for img in image_list if 'normal' in img] 
-    category2_list: List[str] = [img for img in image_list if 'atipica' in img]
-    storelist: List[str] = []
-
-    while len(category1_list) > len(category2_list):
-        image_dropped = category1_list.pop(random.randint(0,(len(category1_list)-1)))
-        storelist.append(image_dropped)
-
-    while len(category1_list) < len(category2_list):
-        image_dropped = category2_list.pop(random.randint(0,(len(category2_list)-1)))
-        storelist.append(image_dropped)
-
-
-    return category1_list + category2_list, storelist
