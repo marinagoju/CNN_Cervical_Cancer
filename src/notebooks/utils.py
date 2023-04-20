@@ -5,8 +5,8 @@ from skimage.io import imread
 
 # CONSTANTES PARA LAS CARACTERISTICAS DE LAS IMAGENES Y EL MODELO 
 
-IMAGE_HEIGHT = 50
-IMAGE_WIDTH = 50
+IMAGE_HEIGHT = 125
+IMAGE_WIDTH = 125
 IMAGE_CHANNELS = 3   # RGB o color (3) // ByN o escala grises (1)
 DATA_PATH = "../../../data_ML/" 
 BATCH_SIZE = 32
