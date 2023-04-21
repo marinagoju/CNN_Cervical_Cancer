@@ -11,7 +11,8 @@ IMAGE_CHANNELS = 3   # RGB o color (3) // ByN o escala grises (1)
 DATA_PATH = "../../../data_ML/" 
 BATCH_SIZE = 16
 EPOCHS = 50
-PATIENCE = 8 
+PATIENCE = 8
+STEP= 100
 
 
 # FUNCIONES DE UTILIDAD
