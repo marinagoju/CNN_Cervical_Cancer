@@ -11,7 +11,7 @@ IMAGE_CHANNELS = 3   # RGB o color (3) // ByN o escala grises (1)
 DATA_PATH = "../../../data_ML/" 
 BATCH_SIZE = 16
 EPOCHS = 50
-PATIENCE = 25 
+PATIENCE = 8 
 
 
 # FUNCIONES DE UTILIDAD
@@ -89,3 +89,5 @@ def loadImage(image_list, image_path, image_height, image_width, grey_scale:bool
 
 
         return (np.array(X), np.array(Y))
+    
+    # TODO Funcion para representar las imagenes donde no precide bien el modelo.
