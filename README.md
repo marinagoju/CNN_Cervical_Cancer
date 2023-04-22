@@ -1,7 +1,7 @@
 ![imagen](https://github.com/marinagoju/ML-Classifier-citology/blob/main/src/data/portada.jpg)
-# <div align="center">**Clasificador cáncer cervical usando redes neuronales convolucionales**</div>
+# <div align="center">**Algoritmo de redes neuronales para detección de cáncer cervical**</div>
 
-En este repositorio se plantea un modelo predictivo de redes convolucionales basado en un clasificador de imágenes de citologías cervicovaginales a nivel celular, es decir fundado en las características de células aisladas procedentes del cuello del útero.
+En este repositorio se plantea un modelo predictivo de redes neuronales convolucionales (CNN) basado en un clasificador de imágenes de citologías cervicovaginales a nivel celular, es decir fundado en las características de células aisladas procedentes del cuello del útero.
 <br></br> 
 
 1. [Dataset y metodología de trabajo](#id1)
@@ -24,7 +24,7 @@ Hoy en día, el ingente volumen de muestras citológicas recibidas en los labora
 <div id='id1'/>
 <h2> 🔎 1. Dataset y metodología de trabajo</h2>
 
-El dataset sobre el que trabajamos fue obtenido de la base de datos de SIPakMed: https://www.cs.uoi.gr/~marina/sipakmed.html (crear enlace)
+El dataset sobre el que trabajamos fue obtenido de la base de datos de [SIPakMed ](https://www.cs.uoi.gr/~marina/sipakmed.html)
 
 Consta de 4049 imágenes de células aisladas recortadas a partir de 966 imágenes de frotis cervicovaginales (con tinción Papanicolau), las cuales fueron obtenidas mediante de una cámara CCD incorporada a un microscopio óptico.
 
