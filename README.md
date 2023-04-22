@@ -31,10 +31,8 @@ Consta de 4049 imágenes de células aisladas recortadas a partir de 966 imágen
 Las células que refieren las imágenes incluyen células del epitelio cervical superficiales, intermedias, parabasales, células metaplásicas de la zona de transformación cervical, así como células disqueratósicas y coilocíticas atípicas. 
 
 Para simplificar el tratamiento de los datos, se agruparon las imágenes en dos categorías: 
-•	células normales. Incluimos células epiteliales escamosas estratificadas (no queratinizadas) superficiales, intermedias y parabasales, así como células metaplásicas benignas (transformadas) de la zona de transformación cervical.
-•	Células atípicas. Incluimos aquí las células disqueratósicas y coilocíticas frecuentemente asociadas a neoplasias cervicales previa infección por el VPH.
-
-
+- células normales. Incluimos células epiteliales escamosas estratificadas (no queratinizadas) superficiales, intermedias y parabasales, así como células metaplásicas benignas (transformadas) de la zona de transformación cervical.
+- Células atípicas. Incluimos aquí las células disqueratósicas y coilocíticas frecuentemente asociadas a neoplasias cervicales previa infección por el VPH.
 <br></br>
 
 <div id='id2'/>
@@ -47,7 +45,6 @@ La categoría de células normales la constituyen aquellas que encontramos habit
 Otro aspecto crucial en el procesado de los datos fue ajustar todas las imágenes a la misma resolución y dimensión, así como ajustar la configuración para poder cargarlas en blanco y negro o a color para hacer las pruebas.
 
 En el notebook se muestran dos modelos, un modelo estandar de redes neuronales convolucionales con tres capas, una de input, hiden y output respectivamente, y otro en el que se implementa el algoritmo preentrenado VGG-16 en la capa de entrada (transfer learning).
-
 <br></br>
 
 <div id='id3'/>
