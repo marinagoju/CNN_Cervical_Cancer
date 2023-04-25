@@ -24,13 +24,14 @@ Hoy en día, el ingente volumen de muestras citológicas recibidas en los labora
 <div id='id1'/>
 <h2> 🔎 1. Dataset y metodología de trabajo</h2>
 
-El dataset sobre el que trabajamos fue obtenido de la base de datos de [SIPakMed ](https://www.cs.uoi.gr/~marina/sipakmed.html)
+El dataset sobre el que trabajamos fue obtenido de la base de datos de [SIPakMed](https://www.cs.uoi.gr/~marina/sipakmed.html).
 
-Consta de 4049 imágenes de células aisladas recortadas a partir de 966 imágenes de frotis cervicovaginales (con tinción Papanicolau), las cuales fueron obtenidas mediante de una cámara CCD incorporada a un microscopio óptico.
+Dicho dataset consta de 4049 imágenes de células aisladas recortadas a partir de 966 imágenes de frotis cervicovaginales (con tinción Papanicolau), las cuales fueron obtenidas mediante de una cámara CCD incorporada a un microscopio óptico.
 
-Las células que refieren las imágenes incluyen células del epitelio cervical superficiales, intermedias, parabasales, células metaplásicas de la zona de transformación cervical, así como células disqueratósicas y coilocíticas atípicas. 
+Las células que refieren las imágenes incluyen células del epitelio cervical de tipo superficial, intermedio, parabasal, células metaplásicas de la zona de transformación cervical, así como células disqueratósicas y coilocíticas atípicas. 
+Para más información sobre la clasificación de células en la base de datos, el paper completo se puede encontrar [aquí](https://www.researchgate.net/publication/327995161_Sipakmed_A_New_Dataset_for_Feature_and_Image_Based_Classification_of_Normal_and_Pathological_Cervical_Cells_in_Pap_Smear_Images).
 
-Para simplificar el tratamiento de los datos, se agruparon las imágenes en dos categorías: 
+Con objeto de simplificar el tratamiento de los datos, se agruparon las imágenes en dos categorías: 
 - **Células normales**. Incluimos células epiteliales escamosas estratificadas (no queratinizadas) superficiales, intermedias y parabasales, así como células metaplásicas benignas (transformadas) de la zona de transformación cervical.
 - **Células atípicas**. Incluimos aquí las células disqueratósicas y coilocíticas frecuentemente asociadas a neoplasias cervicales previa infección por el VPH.
 <br></br>
@@ -50,7 +51,7 @@ En el notebook se muestran dos modelos, un modelo estandar de redes neuronales c
 <div id='id3'/>
 <h2> 📋 3. Resultados y conclusiones</h2>
 
-El modelo que tuvo mejor scoring con un % de exactutud y una pérdida de %, fue en el que implementamos el modelo preentrenado de VGG-16, aunque en el repositorio se pueden revisar ambos.<br></br>
+El modelo que tuvo mejor scoring con un 97.5% de exactutud y una pérdida de 7%, fue en el que implementamos el modelo preentrenado de VGG-16, aunque en el repositorio se pueden revisar ambos.<br></br>
 
 <div id='id4'/>
 <h2> 💬 4. Comentarios del autor</h2>

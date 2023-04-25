@@ -1,8 +1,3 @@
-import numpy as np 
-import cv2                       
-from skimage.io import imread    
-
-
 # CONSTANTES PARA LAS CARACTERISTICAS DE LAS IMAGENES Y EL MODELO 
 
 IMAGE_HEIGHT = 125
@@ -11,8 +6,8 @@ IMAGE_CHANNELS = 3   # RGB o color (3) // ByN o escala grises (1)
 DATA_PATH = "../../../data_ML/" 
 BATCH_SIZE = 16
 EPOCHS = 50
-PATIENCE = 8
-STEP= 100
+PATIENCE = 13
+STEP = 100
 
 
 # FUNCIONES DE UTILIDAD
@@ -46,9 +41,12 @@ def balanceData(data_list) -> tuple:
 
 
 def loadImage(image_list, image_path, image_height, image_width, grey_scale:bool = False) -> tuple:
+    import numpy as np 
+    import cv2                       
+    from skimage.io import imread  
     '''Función para leer datos de imagen de forma iterativa.
 
-    Input (image_list): Lista de los nombres de los archivos a leer.
+    Input (image_list): Lista con los nombres de los archivos a leer.
     Input (image_path): Ruta donde se encuentran los archivos.
     Input (image_height, image_width): Dimensiones de alto y ancho con las que se cargarán los archivos de imagen (resize).
     Input (grey_scale): Booleano que configura la lectura de las imágenes en escala de grises. If 'True' converts color images to gray-scale.
@@ -91,4 +89,4 @@ def loadImage(image_list, image_path, image_height, image_width, grey_scale:bool
 
         return (np.array(X), np.array(Y))
     
-    # TODO Funcion para representar las imagenes donde no precide bien el modelo.
+    # TODO Funcion para representar las imagenes donde no precide bien el modelo (para estudiar casos).
